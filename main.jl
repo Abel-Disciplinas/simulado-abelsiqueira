@@ -5,5 +5,9 @@ function bhaskara(a, b, c)
     error("Oh no")
   end
   r1, r2 = (-b - √Δ) / 2a, (-b + √Δ) / 2a
-  return 0, 0
+  if r1 < r2
+    return r1, r2
+  else
+    return r2, r1
+  end
 end
